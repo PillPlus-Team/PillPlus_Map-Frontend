@@ -7,8 +7,6 @@ import FilterBarPillStore from './components/FilterBarPillStore'
 import MapContext from '../components/MapContext'
 import UserContext from '../components/UserContext'
 
-import { LoadingModal, ConfirmDialog, Toast} from '../components/SweetAlert2';
-
 const PillStorePage = () => {
 
     const {user, setUser, setPillList, selectedPillStore, setSelectedPillStore, center, setCenter, isSelect, setIsSelect, pillStoreList, render, logout, API_KEY, API_UPDATE, history} = useContext(UserContext);

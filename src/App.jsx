@@ -120,8 +120,8 @@ const App = () => {
       
       {isAuth?
         <Switch>
-          <Route exact path="/home" component={PillStorePage} />
-          <Redirect to="/home" />
+          <Route exact path="/pillstore" component={PillStorePage} />
+          <Redirect to="/pillstore" />
         </Switch>
       : 
         <Switch>
