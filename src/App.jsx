@@ -32,8 +32,7 @@ const App = () => {
   const logout = useCallback(() => {
     console.log('Loging out...')
 
-    localStorage.removeItem('nationalId')
-    localStorage.removeItem('serialNumber')
+    localStorage.removeItem('prescriptionID')
     localStorage.removeItem('auth')
     console.log('Remove from LocalStorage Completed')
     

@@ -15,7 +15,6 @@ const LoginPage = () => {
 
         // get locations data
         const fetchLocations = async (prescriptionID) => {
-            // console.log(API_KEY + API_PILLSTORES + prescriptionID)
             const res = await fetch(API_KEY + API_PILLSTORES + prescriptionID, {
                 method: 'GET',
                 mode: 'cors',
@@ -26,6 +25,7 @@ const LoginPage = () => {
             });
 
             console.log(res.message);
+            console.log(res)
             
             if (res.status === 200){
                 const data = await res.json()
