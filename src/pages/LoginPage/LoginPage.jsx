@@ -37,14 +37,18 @@ const LoginPage = () => {
                 console.log("Fetch Location Completed")
             }else{
                 console.log("ERROR:" + res.status + " Cannot get Avaliable pillStores")
+                return false;
             }
+            return true;
 
         }
        
         fetchLocations(prescriptionID)
-        .then(() => setRender(true))
-        .then(() => {
-            setIsAuth(true);
+        .then((res) =>{
+            if (res) {
+                setRender(true)
+                setIsAuth(true)
+            }
         })
     }
 
