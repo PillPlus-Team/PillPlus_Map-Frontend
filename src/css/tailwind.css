@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+@tailwind base;
+body {
+    @apply bg-gradient-to-b from-blue-300 to-blue-400;
+    font-family: 'Kanit', sans-serif;
+}
+
+/*scrollbar*/
+::-webkit-scrollbar {
+    width: 4px;
+    height: 0px;
+}
+::-webkit-scrollbar-track {
+
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    @apply bg-gray-400;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-600;
+}
+
+
+@tailwind components;
+@tailwind utilities;
